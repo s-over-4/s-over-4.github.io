@@ -1,4 +1,4 @@
-# Hello!
+# Hi
 
 I am a human being, who probably does not live in _your_ walls. I have mediocre programming skills, but enjoy pretending that I know what I'm doing while fixing someone’s printer.
 
