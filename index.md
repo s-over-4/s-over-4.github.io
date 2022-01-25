@@ -30,7 +30,7 @@ Eastern or European?
 
 ## Aha look at that I _can_ write code!
 ### A short program that generates a random name like mine
-### Big thanks to Sumairu for helping
+### Big thanks to Sumairu
 ```markdown
 import random
 import string
