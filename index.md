@@ -27,9 +27,9 @@ Eastern or European?
 ### What?! I don't know tha- AAAAAAAAUUUUGGHHH!
 
 
-
+##
 ## Aha look at that I _can_ write code!
-### A short program that generates a random name like mine
+### A short python script that generates a random name like mine
 ### Big thanks to Sumairu
 ```markdown
 import random
