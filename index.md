@@ -30,6 +30,19 @@ Eastern or European?
 
 
 ```markdown
-content arriving soon!
+import random as r
+import string as s
+letter = r.choice(list(s.ascii_lowercase))
+operator = r.choice(["!","^","*","-","+","/"])
+number = r.choice([i for i in range(10)])
+if letter == "c":
+    operator = "+"
+    number = 1
+elif letter == "s":
+    operator = "/"
+    number = 4
+else:
+    pass
+print(letter+operator+str(number))
 ```
 
