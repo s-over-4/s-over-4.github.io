@@ -36,7 +36,7 @@ import random
 import string
 letter = random.choice(list(string.ascii_lowercase))
 operator = random.choice(["!", "^", "*", "-", "+", "/"])
-number = random.choice(list(range(10)))
+number = random.choice(range(10))
 if letter == "c":
     operator = "+"
     number = 1
