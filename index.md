@@ -1,8 +1,6 @@
-## Welcome to the hompage of c+1
+## Hello!
 
-
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I am a human being, who probably does not live in _your_ walls.
 
 ### Markdown
 
