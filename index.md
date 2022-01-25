@@ -28,21 +28,21 @@ Eastern or European?
 
 
 
-
+## Aha look at that I _can_ write code!
+### A short program that generates a random name like mine
+### Big thanks to Sumairu for helping
 ```markdown
-import random as r
-import string as s
-letter = r.choice(list(s.ascii_lowercase))
-operator = r.choice(["!","^","*","-","+","/"])
-number = r.choice([i for i in range(10)])
+import random
+import string
+letter = random.choice(list(string.ascii_lowercase))
+operator = random.choice(["!", "^", "*", "-", "+", "/"])
+number = random.choice(list(range(10)))
 if letter == "c":
     operator = "+"
     number = 1
 elif letter == "s":
     operator = "/"
     number = 4
-else:
-    pass
-print(letter+operator+str(number))
+print(f"{letter}{operator}{number}")
 ```
 
