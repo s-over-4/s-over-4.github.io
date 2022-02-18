@@ -120,5 +120,11 @@ a:visited {
 	display: flex;
 	justify-content: center;
 	align-items: center; /*align*/
+	margin: 100px;
 	color: #000
+	transition: all .2s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
