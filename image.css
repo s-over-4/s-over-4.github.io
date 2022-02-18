@@ -1,4 +1,7 @@
 .image-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 10pt;
   background-size: 50vh;
   background-position: center;
