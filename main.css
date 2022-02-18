@@ -78,10 +78,11 @@ a {
     text-decoration-style: dotted;
     text-decoration-thickness: 3px;
     color: #0080ff;
+    trasition: transform .5 ease-in-out
 }
 
 a:hover {
-    font-size: 18pt;
+    transform: font-size: 18pt;
 
 }
 
@@ -90,7 +91,7 @@ a:visited {
 }
 
 a:visited:hover {
-    font-size: 18pt;
+    transform: font-size: 18pt;;
 }
 
 :focus-visible {
