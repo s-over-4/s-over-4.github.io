@@ -73,3 +73,10 @@ body {
     }
 }
 
+.link-back {
+    transition: transform 10s ease-in-out;
+}
+
+.link-back:hover {
+    transform: font-size(20pt)
+}
