@@ -82,11 +82,11 @@ a {
 }
 
 .link {
-    transition: transform 1s;
+    transition: all .2s ease-in-out;
 }
 
 .link:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 
