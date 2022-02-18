@@ -48,10 +48,12 @@ body {
 }
 
 header, main, footer {
+    color: #ffffff;
     max-width: 40em;
     margin: 10px auto;
-    border: 2px solid #123;
-    background-color: #def;
+    border: 2px solid #1f1f1f;
+    background-color: #3d3d3d;
+
 }
 
 h1, h2, h3, p, .iframe-wrapper {
