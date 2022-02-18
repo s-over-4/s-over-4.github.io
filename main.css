@@ -115,3 +115,9 @@ a:visited {
     margin: 1em 1em;
     height: 10px;
 }
+
+.button {
+	display: flex;
+	justify-content: center;
+	color: #000
+}
