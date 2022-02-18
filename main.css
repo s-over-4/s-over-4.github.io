@@ -40,7 +40,7 @@ body {
     background-image: url('background-image.svg');
     background-position: center;
     background-repeat: repeat;
-    margin: 1;
+    margin: .5;
     line-height: 1.35;
     font-family: 'menlo', 'monaco', 'open sans';
     font-size: 15pt;
