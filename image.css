@@ -1,0 +1,31 @@
+.image-text {
+  font-size: 10pt;
+  background-size: 50vh;
+  background-position: center;
+  line-height: 16px;
+  background: url("image.png");
+  -webkit-background-clip: text;
+  background-attachment: fixed;
+  background-clip:text;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: left;
+  align-items: top;
+}
+body {
+  background: black;
+  overflow-y: scroll;
+}
+
+.link-back {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 100px;
+  transition: transform 1s;
+}
+
+.link-back:hover {
+  transform: scale(1.4);
+}
