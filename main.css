@@ -122,9 +122,9 @@ a:visited {
 	align-items: center; /*align*/
 	margin: 100px;
 	color: #000
-	transition: all .2s ease-in-out;
+	transition: all .5s ease-in-out;
 }
 
 .buttonContainer:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
