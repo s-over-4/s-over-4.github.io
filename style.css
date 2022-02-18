@@ -74,6 +74,11 @@ body {
 }
 
 .link-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
     transition: transform 1s;
 }
 
