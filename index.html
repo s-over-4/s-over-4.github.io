@@ -23,6 +23,18 @@
       <p>A <a href="image.html">Cat</a>.</p>
     </footer>
     
+    <p id="ads">Demo Text</p>
+      <button type = "button" onclick = "displayHide()"> Hide </button>
+      <button type = "button" onclick = "displayShow()"> Show </button>
+      <script>
+         function displayHide() {
+            document.getElementById("ads").style.visibility = "hidden";
+         }
+         function displayShow() {
+            document.getElementById("ads").style.visibility = "visible";
+         }
+      </script>
+    
     <iframe src="https://john.mondecitronne.com/embed?ref=s-over-4.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
     
   </body>
