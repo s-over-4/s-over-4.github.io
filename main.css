@@ -40,8 +40,8 @@ body {
     background-image: url('background-image.svg');
     background-position: center;
     background-repeat: repeat;
-    margin: 0;
-    line-height: 1.333;
+    margin: 1;
+    line-height: 1.35;
     font-family: 'menlo', 'monaco', 'open sans';
     font-size: 15pt;
     overflow-y: scroll; /* either scroll or hidden due to scrollbar messing with main x and page width */
