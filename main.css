@@ -25,6 +25,10 @@ time, mark, audio, video {
 }
 
 
+:root {
+    font-family: 'menlo','monaco','open sans'
+}
+
 
 
 html {
