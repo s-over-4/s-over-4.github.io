@@ -74,9 +74,9 @@ body {
 }
 
 .link-back {
-    transition: scale 1s ease-in-out;
+    transition: transform 1s;
 }
 
 .link-back:hover {
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
