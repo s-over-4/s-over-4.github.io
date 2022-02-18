@@ -82,6 +82,8 @@ a {
 }
 
 .link {
+    display: flex;
+    justify-content: center;
     transition: all .2s ease-in-out;
 }
 
