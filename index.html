@@ -23,9 +23,13 @@
       <p>A <a href="image.html">Cat</a>.</p>
     </footer>
     
+    <script>
+        document.getElementById("ads").style.visibility = "hidden";
+    </script>
+    
     <p id="ads"> <iframe src="https://john.mondecitronne.com/embed?ref=s-over-4.github.io" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe></p>
-      <button type = "button" onclick = "displayHide()"> Hide ads </button>
-      <button type = "button" onclick = "displayShow()"> Show ads </button>
+      <button type = "button" onclick = "displayHide()" class="button"> Hide ads </button>
+      <button type = "button" onclick = "displayShow()" class="button"> Show ads </button>
       <script>
          function displayHide() {
             document.getElementById("ads").style.visibility = "hidden";
@@ -34,8 +38,6 @@
             document.getElementById("ads").style.visibility = "visible";
          }
       </script>
-    
-    
     
   </body>
 </html>
