@@ -119,6 +119,6 @@ a:visited {
 .button {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; /*align*/
 	color: #000
 }
