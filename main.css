@@ -81,17 +81,17 @@ a {
     trasition: transform .5 ease-in-out
 }
 
-a:hover {
-    transform: font-size: 18pt;
+.link {
+    transition: transform 1s;
+}
+
+.link:hover {
+    transform: scale(1.2);
 
 }
 
 a:visited {
     color: #0062c3;
-}
-
-a:visited:hover {
-    transform: font-size: 18pt;;
 }
 
 :focus-visible {
