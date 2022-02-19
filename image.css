@@ -4,9 +4,10 @@
   margin-left: auto;
   width: 100%;
   height: 70%;
-  font-size: 10pt;
+  font-size: 20pt;
   background-size: 50vh;
-  line-height: 16px;
+  background-position: center;
+  line-height: 10px;
   background: url("image.png");
   background-position: top;
   -webkit-background-clip: text;
@@ -14,6 +15,8 @@
   background-clip: center;
   background-repeat: no-repeat;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  font-family: 'Menlo','Monaco';
+  font-style: bold;
 }
 
 body {
