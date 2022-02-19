@@ -1,21 +1,22 @@
 .image-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 70%;
   font-size: 10pt;
   background-size: 50vh;
   background-position: center;
   line-height: 16px;
   background: url("image.png");
+  background-position: top;
   -webkit-background-clip: text;
-  background-attachment: fixed;
-  background-clip:text;
+  background-attachment: center;
+  background-clip: center;
   background-repeat: no-repeat;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  display: flex;
-  justify-content: left;
-  align-items: top;
 }
+
 body {
   background: black;
   overflow-y: scroll;
