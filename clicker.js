@@ -203,6 +203,10 @@ function update_quote_and_stuff() {
     if (clicker.clicks > 10000) {
         document.querySelector('.quote').innerHTML = "\"10,000 clicks!\""
     }
+    if (clicker.clicks == 69420 {
+        document.querySelector('.quote').innerHTML = "\"hehhehehehheheheheh funny number hehehhe\""
+        sleep(2000)
+    }
     if (clicker.clicks > 100000) {
         document.querySelector('.quote').innerHTML = "\"you fucking psychopath\""
     }
