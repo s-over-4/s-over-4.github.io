@@ -75,19 +75,19 @@ var clicker = {
         },
         clickatronator3000: {
             amount: 0,
-            cost: 200000, 
+            cost: 300000, 
             cps: 2500,
             name: "Clickatronator 3000™"
         },
         clickatronator4000: {
             amount: 0,
-            cost: 300000, 
+            cost: 370000, 
             cps: 3000,
             name: "Clickatronator 4000™"
         },
         clickatronator5000: {
             amount: 0,
-            cost: 400000, 
+            cost: 470000, 
             cps: 3500,
             name: "Clickatronator 5000™"
         },
@@ -101,7 +101,7 @@ function clicked(thing) {
     if (clicker.upgrades[thing].cost <= clicker.clicks) {
         clicker.clicks -= clicker.upgrades[thing].cost;
         clicker.upgrades[thing].amount++;
-        clicker.upgrades[thing].cost += Math.round(clicker.upgrades[thing].cost * 0.1)
+        clicker.upgrades[thing].cost += Math.round(clicker.upgrades[thing].cost * 0.25)
         update_upgrades();
     }
     else {
