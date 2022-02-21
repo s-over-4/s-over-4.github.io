@@ -1,3 +1,5 @@
+var click_sound = new Audio('clicker.mp3')
+
 var clicker = {
     clicks: 0,
     upgrades: {
@@ -281,6 +283,9 @@ function sleep(ms) {
 
 function addClick () {
     clicker.clicks++;
+    const origClickAudio = new Audio('clicker.mp3')
+    const newClickAudio = origClickAudio.cloneNode()
+    newClickAudio.play()
 };
 
 
