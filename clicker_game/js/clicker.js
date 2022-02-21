@@ -1,4 +1,8 @@
-var click_sound = new Audio('clicker.mp3')
+function playSound(soundFile) {
+    var originalAudio = new Audio('/clicker_game/audio/'+soundFile+'.mp3')
+    var newAudio = originalAudio.cloneNode()
+    newAudio.play()
+}
 
 var clicker = {
     clicks: 0,
@@ -127,7 +131,9 @@ var clicker = {
     achievements:[{req: 'clicker.clicks > 0', had: false, text:'The first click', subtext:'\"it begins\"'},
                  {req: 'clicker.upgrades.clickenator1000.amount > 0', had: false, text:'The first Clickenator™', subtext:'\"Not our top-of-the-line model, but certainly a best-seller.\"'},
                  {req: 'clicker.clicks > 100', had: false, text:'', subtext:'\"it begins\"'},
-                 {req: 'clicker.upgrades.clickatron1000.amount > 0', had: false, text:'The Clickatron 1000™', subtext:'\"Our mid-range Clickatron™ series provides industry-standard clicking capacity, while still being lightweight and affordable.\"'},]
+                 {req: 'clicker.upgrades.clickatron1000.amount > 0', had: false, text:'The Clickatron 1000™', subtext:'\"Our mid-range Clickatron™ series provides industry-standard clicking capacity, while still being lightweight and affordable.\"'},
+                 {req: 'clicker.upgrades.clickatroneronarator1000.amount > 0', had: false, text:'Clickatroneronarator™', subtext:'\"Clickatronaronaronaronaronaronaronaronaronaronaron...\"'},
+                 {req: 'clicker.upgrades.clickatroneronarator5000.amount > 0', had: false, text:'End of the line', subtext:'\"Here ends the Clickenator lineup; new features coming soon!\"'},]
 };
 
 var delay = 0;
@@ -135,12 +141,14 @@ var delay = 0;
 
 function clicked(thing) {
     if (clicker.upgrades[thing].cost <= clicker.clicks) {
+        playSound('pop');
         clicker.clicks -= clicker.upgrades[thing].cost;
         clicker.upgrades[thing].amount++;
         clicker.upgrades[thing].cost += Math.round(clicker.upgrades[thing].cost * 0.25)
         update_upgrades();
     }
     else {
+        playSound('denied')
         document.querySelector('body').innerHTML += `<div class="notifications-warning">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         You can't afford that!
@@ -152,7 +160,7 @@ function clicked(thing) {
 function update_upgrades() {
     document.querySelector('#upgrades').innerHTML = '';
     for (i in clicker.upgrades) {
-        document.querySelector('#upgrades').innerHTML += `<br> <button class="buy-upgrade" onclick="clicked('${i}')">${clicker.upgrades[i].name}</button> You have ${clicker.upgrades[i].amount} Cost: ${clicker.upgrades[i].cost}`;
+        document.querySelector('#upgrades').innerHTML += `<br> <button class="buy-upgrade" onclick="clicked('${i}');">${clicker.upgrades[i].name}</button> You have ${clicker.upgrades[i].amount} Cost: ${clicker.upgrades[i].cost}`;
     };
 };
 
@@ -263,7 +271,7 @@ function update_quote_and_stuff() {
         sleep(2000);
     };
     if (clicker.clicks > 100000) {
-        document.querySelector('.quote').innerHTML = "\"you fucking psychopath\"";
+        document.querySelector('.quote').innerHTML = "\"100,000 clicks!\"";
     };
     if (clicker.clicks > 500000) {
         document.querySelector('.quote').innerHTML = "\"Keep pushing!\"";
@@ -274,6 +282,12 @@ function update_quote_and_stuff() {
     if (clicker.clicks > 1500000) {
         document.querySelector('.quote').innerHTML = "\"Pickles are cucumbers soaked in evil.\"";
     };
+    if (clicker.clicks > 2000000) {
+        document.querySelector('.quote').innerHTML = "\"What even *are* capers?\"";
+    };
+    if (clicker.clicks > 5000000) {
+        document.querySelector('.quote').innerHTML = "\"Why do you park on a driveway and drive on a parkway?\"";
+    };
 };
 
 function sleep(ms) {
@@ -283,10 +297,10 @@ function sleep(ms) {
 
 function addClick () {
     clicker.clicks++;
-    const origClickAudio = new Audio('clicker.mp3')
-    const newClickAudio = origClickAudio.cloneNode()
-    newClickAudio.play()
+    playSound('click')
 };
+
+
 
 
 /* Set the width of the sidebar to 250px (show it) */
