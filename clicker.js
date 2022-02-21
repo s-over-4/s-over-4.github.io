@@ -149,6 +149,9 @@ function update_quote_and_stuff() {
     if (clicker.clicks > 450) {
         document.querySelector('.quote').innerHTML = "\"Also, check out <a href=\"euphoria.io/room/xkcd\">euphoria</a>!\""
     }
+    if (clicker.clicks > 1000) {
+        document.querySelector('.quote').innerHTML = "\"Must. Add. More. Levels.\""
+    }
 }
 
 function sleep(ms) {
