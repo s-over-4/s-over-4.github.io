@@ -203,7 +203,7 @@ function update_quote_and_stuff() {
     if (clicker.clicks > 10000) {
         document.querySelector('.quote').innerHTML = "\"10,000 clicks!\""
     }
-    if (clicker.clicks == 69420 {
+    if (clicker.clicks == 69420) {
         document.querySelector('.quote').innerHTML = "\"hehhehehehheheheheh funny number hehehhe\""
         alert("FUNNY NUMBER ALERT")
         sleep(2000)
