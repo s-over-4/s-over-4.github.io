@@ -167,6 +167,12 @@ function update_quote_and_stuff() {
     if (clicker.clicks > 5000) {
         document.querySelector('.quote').innerHTML = "\"You certainly are a prolific clicker.\""
     }
+    if (clicker.clicks > 7000) {
+        document.querySelector('.quote').innerHTML = "\"*clickity clickity clickity clickity *\""
+    }
+    if (clicker.clicks > 10000) {
+        document.querySelector('.quote').innerHTML = "\"10,000 clicks!\""
+    }
 }
 
 function sleep(ms) {
