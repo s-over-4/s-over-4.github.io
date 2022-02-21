@@ -157,3 +157,15 @@ body {
   .openbtn:hover {
     background-color: #444;
   }
+
+  .link-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    transition: transform 1s;
+  }
+  
+  .link-back:hover {
+    transform: scale(1.4);
+  }
