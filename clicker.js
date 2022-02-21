@@ -227,3 +227,11 @@ function sleep(ms) {
 }
 
 document.querySelector('#version').innerHTML = "BETA 5.3"
+
+function addClick () {
+    clicker.clicks++
+}
+
+
+
+
