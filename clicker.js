@@ -61,6 +61,36 @@ var clicker = {
             cps: 1000,
             name: "Clickatron 5000™"
         },
+        clickatronator1000: {
+            amount: 0,
+            cost: 100000, 
+            cps: 2000,
+            name: "Clickatronator 1000™"
+        },
+        clickatronator2000: {
+            amount: 0,
+            cost: 200000, 
+            cps: 2500,
+            name: "Clickatronator 2000™"
+        },
+        clickatronator3000: {
+            amount: 0,
+            cost: 200000, 
+            cps: 2500,
+            name: "Clickatronator 3000™"
+        },
+        clickatronator4000: {
+            amount: 0,
+            cost: 300000, 
+            cps: 3000,
+            name: "Clickatronator 4000™"
+        },
+        clickatronator5000: {
+            amount: 0,
+            cost: 400000, 
+            cps: 3500,
+            name: "Clickatronator 5000™"
+        },
     },
 };
 
