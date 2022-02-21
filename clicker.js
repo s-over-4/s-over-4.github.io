@@ -220,3 +220,5 @@ function update_quote_and_stuff() {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+document.querySelector('#version').innerHTML = "BETA 5.3"
