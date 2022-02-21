@@ -7,6 +7,14 @@
     <script src="js-cookie.js"></script>
 </head>
 <body onload="updateClicksCount()">
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Stats</a>
+        <a href="#">Settings</a>
+    </div>  
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+
     <h1 class="counter">You have 0 clicks.</h1>
     <h5 class="quote">"Get a move on!"</h2>
     <button class="THEbutton" onclick="addClick()">click here!</button>

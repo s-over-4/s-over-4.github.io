@@ -49,7 +49,7 @@ body {
 
 
 /* The alert message box */
-.notifications {
+.notifications-warning {
     padding: 1.1rem;
     background-color: #f44336; /* Red */
     color: white;
@@ -58,6 +58,26 @@ body {
     transition: opacity 0.6s; /* 600ms to fade out */
     width: 20%;
     margin: 1.2rem;
+  }
+
+  .notifications-achievement {
+    padding: 1.1rem;
+    background-color: #0030cf; /* Red */
+    color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+    opacity: 1;
+    transition: opacity 0.6s; /* 600ms to fade out */
+    width: 20%;
+    margin: 1.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .quote-achievement {
+    font-size: .8rem;
+    color: rgb(184, 184, 184);
+    margin: 1.2rem;
+    font-style: italic;
   }
   
   /* The close button */
@@ -82,3 +102,58 @@ body {
     color: rgb(56, 56, 56);
     font-size: 10px;
 }
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 250px; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
