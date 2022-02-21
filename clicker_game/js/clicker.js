@@ -141,7 +141,7 @@ var delay = 0;
 
 function clicked(thing) {
     if (clicker.upgrades[thing].cost <= clicker.clicks) {
-        playSound('pop');
+        playSound('success');
         clicker.clicks -= clicker.upgrades[thing].cost;
         clicker.upgrades[thing].amount++;
         clicker.upgrades[thing].cost += Math.round(clicker.upgrades[thing].cost * 0.25)
