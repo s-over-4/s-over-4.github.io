@@ -130,7 +130,7 @@ var clicker = {
     },
     achievements:[{req: 'clicker.clicks > 0', had: false, text:'The first click', subtext:'\"it begins\"'},
                  {req: 'clicker.upgrades.clickenator1000.amount > 0', had: false, text:'The first Clickenator™', subtext:'\"Not our top-of-the-line model, but certainly a best-seller.\"'},
-                 {req: 'clicker.clicks > 100', had: false, text:'', subtext:'\"it begins\"'},
+                 {req: 'clicker.clicks > 100', had: false, text:'100 clicks', subtext:'\"The beginnings or a great click empire.\"'},
                  {req: 'clicker.upgrades.clickatron1000.amount > 0', had: false, text:'The Clickatron 1000™', subtext:'\"Our mid-range Clickatron™ series provides industry-standard clicking capacity, while still being lightweight and affordable.\"'},
                  {req: 'clicker.upgrades.clickatroneronarator1000.amount > 0', had: false, text:'Clickatroneronarator™', subtext:'\"Clickatronaronaronaronaronaronaronaronaronaronaron...\"'},
                  {req: 'clicker.upgrades.clickatroneronarator5000.amount > 0', had: false, text:'End of the line', subtext:'\"Here ends the Clickenator lineup; new features coming soon!\"'},]
@@ -141,7 +141,7 @@ var delay = 0;
 
 function clicked(thing) {
     if (clicker.upgrades[thing].cost <= clicker.clicks) {
-        playSound('success');
+        playSound('click');
         clicker.clicks -= clicker.upgrades[thing].cost;
         clicker.upgrades[thing].amount++;
         clicker.upgrades[thing].cost += Math.round(clicker.upgrades[thing].cost * 0.25)
@@ -305,6 +305,7 @@ function addClick () {
 
 /* Set the width of the sidebar to 250px (show it) */
 function openNav() {
+    playSound('click')
     document.getElementById("mySidepanel").style.width = "250px";
 }
   
