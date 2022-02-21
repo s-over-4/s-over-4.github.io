@@ -203,6 +203,18 @@ function update_quote_and_stuff() {
     if (clicker.clicks > 10000) {
         document.querySelector('.quote').innerHTML = "\"10,000 clicks!\""
     }
+    if (clicker.clicks > 100000) {
+        document.querySelector('.quote').innerHTML = "\"you fucking psychopath\""
+    }
+    if (clicker.clicks > 500000) {
+        document.querySelector('.quote').innerHTML = "\"Keep pushing!\""
+    }
+    if (clicker.clicks > 1000000) {
+        document.querySelector('.quote').innerHTML = "\"Inspirational quotes set false expectations.\""
+    }
+    if (clicker.clicks > 1500000) {
+        document.querySelector('.quote').innerHTML = "\"Pickles are cucumbers soaked in evil.\""
+    }
 }
 
 function sleep(ms) {
