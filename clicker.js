@@ -164,6 +164,9 @@ function update_quote_and_stuff() {
     if (clicker.clicks > 1000) {
         document.querySelector('.quote').innerHTML = "\"Must. Add. More. Levels.\""
     }
+    if (clicker.clicks > 5000) {
+        document.querySelector('.quote').innerHTML = "\"You certainly are a prolific clicker.\""
+    }
 }
 
 function sleep(ms) {
