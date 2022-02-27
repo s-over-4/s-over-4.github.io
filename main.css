@@ -36,10 +36,10 @@ html {
 }
 
 body {
-    background-color: #1f1f1f;
     background-image: url('background-image.svg');
     background-position: center;
     background-repeat: repeat;
+    background-clip: padding-box;
     margin: .5;
     line-height: 1.35;
     font-family: 'menlo', 'monaco', 'open sans';
@@ -55,6 +55,16 @@ header, main, footer {
     background-color: #3d3d3d;
     box-shadow: #000 10px, 10px;
 
+}
+
+.comm {
+    color: #ffffff;
+    max-width: 40em;
+    margin: 10px auto;
+    border: 2px solid #1f1f1f;
+    background-color: #3d3d3d;
+    box-shadow: #000 10px, 10px;
+    height: auto;
 }
 
 h1, h2, h3, p, .iframe-wrapper {
@@ -88,6 +98,17 @@ a {
 }
 
 .link:hover {
+    transform: scale(1.1);
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+.title:hover {
     transform: scale(1.1);
 
 }
