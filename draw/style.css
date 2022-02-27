@@ -122,3 +122,7 @@ button{
     font-family: sans-serif;
     transform: scale(1.2);
 }
+
+canvas {
+    background-color: aliceblue;
+}
