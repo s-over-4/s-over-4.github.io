@@ -2,7 +2,7 @@ const scene = new THREE.Scene(); // Create scene
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 ); // Create camera with FOV of 75, aspect ratio of width/over height, near clipping plane of 0.1 and far clipping plane of 1000
 
 // Set up renderer
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({antialias:true});
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
